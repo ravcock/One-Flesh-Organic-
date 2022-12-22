@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+	width: 100% ;
+    height: 100vh;
+    background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url(images/back.png);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+nav,{
+    width: 100%;
+    display:flex !important;
+    justify-content: space-between !important ;
+    align-items: center !important;
+    padding: 18px 8% !important;
+    transition: background 1s;
+}
+nav .logo{
+    display: flex !important;
+    align-items: center !important;
+    font-size: 26px  !important;
+    font-weight: 600 ;
+    color: #fff;
+}
+nav .logo img{
+    width: 50px;
+    margin-right: 10px;
+}
+nav ul li{
+    display: inline-block !important;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff ;
+    font-weight: 500 ;
+}
+nav:hover{
+    background: #fff ;
+}
+
+nav:hover .logo{
+    color: #333 !important ;
+}
+nav:hover ul li a{
+    color: #333 !important ;
+}
+
+
+/* Nav Bar 2 */
+
+.nav-link{
+    color: #fff !important;
+    
+} 
+
+.fa-bars{
+    color: #fff;
+    font-size: 30px !important;
+}
+nav:hover .fa-bars{
+	color: #333 !important ;
+}
+.navbar-toggler{
+    border: 0 !important;
+    outline: none !important;
+    padding: initial !important;
+}
+.active-home{
+    border-bottom: 2px solid #fff; 
+}
+
+/* Facilites */
+
+.facilites{
+    background-color:#dbe5e6;
+}
+
+.container1{
+    background-color:#dbe5e6;
+    padding: 30px 0px;
+}
+
+.card text-center{
+    height: 100%;
+}
+
+/* Buuton
+.btn-sm{
+    background:  #301934 !important;
+    color: #000 !important;
+    margin-right: 5px;
+}
+*/
+
+/* Content*/
+.content{
+    margin-top: 9% !important;
+    margin-left: 9% !important;
+    color: #fff !important;
+}
+.content h1{
+    font-size: 75px;
+    line-height: 140px! ;
+    font-weight: 600;
+}
+.content p{
+    max-width: 500px;
+    line-height: 26px ;
+    opacity: 0 ;
+}
+.links{
+    margin-top: 30px;
+    opacity: 0 ;
+}
+.links a{
+    color: #fff;
+    text-decoration: none ;
+    display: inline-block ;
+}
+.btn{
+    border: 2px solid #fff !important;
+    padding: 10px 35px ;
+    border-radius: 30px !important;
+    margin-right: 15px ;
+}
+.slide-left{
+    animation: slideleft 1s linear forwards;
+}
+@keyframes slideleft{
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+p.slide-left{
+    animation-delay: 1s;
+}
+.links.slide-left{
+    animation-delay: 2s;
+}
